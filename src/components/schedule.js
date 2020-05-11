@@ -1,8 +1,8 @@
 import React from "react";
 
-const Home = () => {
+const Schedule = () => {
     return (
-        <div className="Home">
+        <div className="Schedule">
              <p>hi</p>
              <table>
                  <tr>closure calendar/graph/grid/table</tr>
@@ -12,4 +12,4 @@ const Home = () => {
         </div>
     )
 }
-export default Home;
+export default Schedule;

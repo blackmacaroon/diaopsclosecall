@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Request from "./components/request";
 import Admin from "./components/admin";
-import Home from "./components/home";
+import Schedule from "./components/schedule";
 import './App.css';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <section>
           <ul className="Nav">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">current schedule</Link>
             </li>
             <li>
               <Link to="/request">request a closure</Link>
@@ -31,7 +31,7 @@ function App() {
             
           </ul>
           <Switch>
-            <Route exact path="/" component={Home}>
+            <Route exact path="/" component={Schedule}>
             </Route>
             <Route exact path="/admin" component={Admin}>
             </Route>
@@ -39,6 +39,11 @@ function App() {
             </Route>
           </Switch>
         </section>
+        <footer>
+				<div class="copyright">
+					<p>Copyright &copy; 2020 Closecall | Kayla Crow </p>
+				</div>
+			</footer>
       </div>
     </Router>
   );

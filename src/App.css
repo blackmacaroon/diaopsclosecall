@@ -21,7 +21,7 @@
   list-style-type: none;
 }
 
-.Request, .Admin, .Home{
+.Request, .Admin, .Schedule{
   background-color: rgb(223, 223, 224);
   min-height: 80vh;
   padding: 20px;
