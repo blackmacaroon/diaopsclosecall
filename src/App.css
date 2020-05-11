@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,8 +14,15 @@
 }
 .Nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 .Nav li {
   list-style-type: none;
+}
+
+.Request, .Admin, .Home{
+  background-color: rgb(223, 223, 224);
+  min-height: 80vh;
+  padding: 20px;
 }
