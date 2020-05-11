@@ -1,0 +1,39 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: $ccdark;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: $cclight;
+  }
+  .Nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .Nav li {
+    list-style-type: none;
+    color: $ccden;
+  }
+  
+  .Request, .Admin, .Schedule{
+    background-color: $cclight;
+    min-height: 80vh;
+    padding: 5vh 0;
+  }
+  
+  .admin-login-form {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+  
+  .copyright{
+    opacity: 30%;
+  }

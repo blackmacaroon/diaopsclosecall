@@ -8,7 +8,7 @@ import {
 import Request from "./components/request";
 import Admin from "./components/admin";
 import Schedule from "./components/schedule";
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
