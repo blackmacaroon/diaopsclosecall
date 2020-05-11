@@ -12,14 +12,25 @@
     font-size: calc(10px + 2vmin);
     color: $cclight;
   }
+
+  .logo {
+    min-height: 40px;
+    max-height: 5vh;
+  }
+
   .Nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0 20px;
   }
   .Nav li {
     list-style-type: none;
-    color: $ccden;
+
+    a {
+      color: $ccden;
+      text-decoration: none;
+    }
   }
   
   .Request, .Admin, .Schedule{

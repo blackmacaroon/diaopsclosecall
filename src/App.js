@@ -19,6 +19,7 @@ function App() {
         </header>
         <section>
           <ul className="Nav">
+            <img className="logo" src="den-logo.jpg"></img>
             <li>
               <Link to="/">current schedule</Link>
             </li>
@@ -40,7 +41,7 @@ function App() {
           </Switch>
         </section>
         <footer>
-				<div class="copyright">
+				<div className="copyright">
 					<p>Copyright &copy; 2020 Closecall | Kayla Crow </p>
 				</div>
 			</footer>
