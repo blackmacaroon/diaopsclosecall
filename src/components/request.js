@@ -3,9 +3,10 @@ import React from "react";
 const Request = () => {
     return (
         <div className="Request">
-            <p>request page</p>
+            <header>
+                <h2>Create a Closure Request:</h2>
+            </header>
             <form>
-                <h2>request pavement closure</h2>
                 <p>dropdown input of closure type</p>
                 <p>dropdown input of closure section</p>
                 <p>moment input of closure time</p>
