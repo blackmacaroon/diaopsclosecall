@@ -2,7 +2,6 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Card  from "@material-ui/core/Card";
 import CardContent  from "@material-ui/core/CardContent";
-import Typography  from "@material-ui/core/Typography";
 
 const Schedule = () => {
     return (
@@ -12,7 +11,7 @@ const Schedule = () => {
                  <Grid item xs={12}md={5}>
                      <Card variant="outlined">
                          <CardContent>think weather app, this is today's forecast</CardContent></Card></Grid>
-                 <Grid item xs={12}>
+                 <Grid item xs={12}md={11}>
                      <Card variant="outlined">
                         <CardContent>underneath is the forecast for the next few days
                             <Grid container justify="space-evenly">
@@ -27,14 +26,14 @@ const Schedule = () => {
                                 </Grid>
                             </Grid>    
                         </CardContent></Card></Grid>
-                 <Grid item xs={12}>
+                 <Grid item xs={12} md={11}>
                      <Card variant="outlined">
                         <CardContent>bottom is month by month, including ability to go into the past
                             <Grid container>
                                 <Grid></Grid>
                             </Grid>
                         </CardContent></Card></Grid>
-                 <Grid item xs={12}>
+                 <Grid item xs={12} md={11}>
                      <Card variant="outlined">
                          <CardContent>(ask phil how long to keep track of history)</CardContent></Card></Grid>
              </Grid>
