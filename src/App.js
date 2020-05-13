@@ -15,6 +15,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
+          <img className="Map" src="denmap2.jpg" alt="map of den airfield"/>
           <p>this will be an interacive map some day </p>
         </header>
         <section>
