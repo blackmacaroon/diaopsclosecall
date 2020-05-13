@@ -16,7 +16,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img className="Map" src="denmap.png" alt="map of den pavement areas"/>
-          <p>depending on the moused-over pavement area, this will tell what the closure is for, it's duration, etc. </p>
+          <p>depending on the moused-over (on tablet, touched) pavement area, this will tell what the closure is for, it's duration, etc. </p>
         </header>
         <section>
           <ul className="Nav">

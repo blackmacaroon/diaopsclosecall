@@ -6,7 +6,7 @@ import CardContent  from "@material-ui/core/CardContent";
 const Schedule = () => {
     return (
         <div className="Schedule">
-             <h2>schedule page</h2>
+             <h2>approved pavement closures</h2>
              <Grid container justify="space-around" spacing={3}>
                  <Grid item xs={12}md={5}>
                      <Card variant="outlined">
@@ -28,7 +28,7 @@ const Schedule = () => {
                         </CardContent></Card></Grid>
                  <Grid item xs={12} md={11}>
                      <Card variant="outlined">
-                        <CardContent>bottom is month by month, including ability to go into the past
+                        <CardContent>bottom is month by month, including ability to jump to date, past or future
                             <Grid container>
                                 <Grid></Grid>
                             </Grid>
