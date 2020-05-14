@@ -15,6 +15,8 @@
 ## Tech Stack:
 ### Frontend:
 - React
+- Sass
+- Material UIs
 
 ### Backend:
 
