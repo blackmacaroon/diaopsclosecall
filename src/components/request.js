@@ -2,21 +2,16 @@ import 'date-fns';
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
-import DateFnsUtils from '@date-io/date-fns';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import Checkbox from "@material-ui/core/Checkbox";
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
-import WatchLaterIcon from '@material-ui/icons/WatchLater';
 import FormHelperText from '@material-ui/core/FormHelperText';
-import { IconButton, InputAdornment } from "@material-ui/core";
+import TodayTwoToneIcon from '@material-ui/icons/TodayTwoTone';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import {
-    MuiPickersUtilsProvider,
-    KeyboardTimePicker,
-    KeyboardDatePicker,
-  } from '@material-ui/pickers';
+import AccessAlarmTwoToneIcon from '@material-ui/icons/AccessAlarmTwoTone';
+import { KeyboardTimePicker, KeyboardDatePicker } from '@material-ui/pickers';
 
 
 export default function Request(){
@@ -25,7 +20,6 @@ export default function Request(){
         setSelectedDate(date)
     };
     return (
-        <MuiPickersUtilsProvider utils={DateFnsUtils}>
         <div className="Request">
             <header>
                 <h2>create a closure request:</h2>
@@ -77,36 +71,33 @@ export default function Request(){
                             KeyboardButtonProps={{
                                 'aria-label': 'change date',
                             }}
+                            keyboardIcon={ (
+                                <TodayTwoToneIcon/>
+                            )}
                         />
                         <KeyboardTimePicker
+                            ampm={false}
                             margin="normal"
                             id="time-picker"
                             label="time"
                             value={selectedDate}
                             onChange={handleDateChange}
-                            InputProps={{
-                                endAdornment: (
-                                  <InputAdornment position="end">
-                                    <IconButton>
-                                      <WatchLaterIcon />
-                                    </IconButton>
-                                  </InputAdornment>
-                                ),
-                              }}
                             KeyboardButtonProps={{
                                 'aria-label': 'change time',
                             }}
+                            keyboardIcon={ (
+                                <AccessAlarmTwoToneIcon/>
+                            )}
+                            
                         />
                         
                     </Card>
                         <p>text input of closure purpose</p>
                         <p>text input of requestee email</p>
                         <p>verification of requestee email</p>
-                
                 </Grid>
             </Grid>
             </form>
         </div>
-        </MuiPickersUtilsProvider>
     )
 }
