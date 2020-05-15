@@ -51,10 +51,24 @@
     justify-content: flex-end;
     padding: 20px;
   }
+  .closureRequestForm {
+    display: flex;
+    flex-direction: column;
+    
+    .formInputs {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
 
-  .dropdown{
-    width: 300px;
+      .datetimepicker {
+        width: 300px;
+      }
+      .dropdown{
+        width: 300px;
+      }
+    }
   }
+  
   .copyright{
     opacity: 30%;
   }

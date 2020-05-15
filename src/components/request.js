@@ -27,69 +27,77 @@ export default function Request(){
             <form>
             <Grid container justify="space-around" spacing={3}>
                 <Grid item xs={12} sm={10}>
-                    <Card className="form" variant="outlined">
-                        <FormControlLabel
-                            control={<Checkbox className="complexClosure" name="complexClosure" />}
-                            label="Check for complex closure"
-                        />
-                        <FormControl className="dropdown">
-                            <InputLabel>runway</InputLabel>
-                            <Select>
-                                <MenuItem>436533433535454545</MenuItem>
-                                <MenuItem>3443</MenuItem>
-                                <MenuItem>688</MenuItem>
-                                <MenuItem>3244</MenuItem>
-                            </Select>
-                        </FormControl>
-                        <FormControl className="dropdown">
+                    <Card className="closureRequestForm" variant="outlined">
+                        <div className="formInputs">
+                            <KeyboardDatePicker
+                                className="datetimepicker"
+                                format="MM/dd/yyyy"
+                                margin="normal"
+                                id="date-picker-inline"
+                                label="date"
+                                value={selectedDate}
+                                onChange={handleDateChange}
+                                KeyboardButtonProps={{
+                                    'aria-label': 'change date',
+                                }}
+                                keyboardIcon={ (
+                                    <TodayTwoToneIcon/>
+                                )}
+                            />
+                            <KeyboardTimePicker
+                                className="datetimepicker"
+                                ampm={false}
+                                margin="normal"
+                                id="time-picker"
+                                label="time"
+                                value={selectedDate}
+                                onChange={handleDateChange}
+                                KeyboardButtonProps={{
+                                    'aria-label': 'change time',
+                                }}
+                                keyboardIcon={ (
+                                    <AccessAlarmTwoToneIcon/>
+                                )}
+                                
+                            />
+                        </div>
+                        <div className="formInputs">
+                            <FormControlLabel
+                                control={<Checkbox className="complexClosure" name="complexClosure" />}
+                                label="Check for complex closure"
+                            />
+                            <FormControl className="dropdown">
+                                <InputLabel>runway</InputLabel>
+                                <Select>
+                                    <MenuItem>34R</MenuItem>
+                                    <MenuItem>34L</MenuItem>
+                                    <MenuItem>35R</MenuItem>
+                                    <MenuItem>35L</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </div>
+                        <div className="formInputs">
+                            <FormControl className="dropdown">
+                                <InputLabel>taxiway</InputLabel>
+                                <Select>
+                                    <MenuItem>NKDN</MenuItem>
+                                    <MenuItem>JTJT3</MenuItem>
+                                    <MenuItem>LS OSIU</MenuItem>
+                                    <MenuItem>NDNNEN4</MenuItem>
+                                </Select>
+                                <FormHelperText>between</FormHelperText>
+                            </FormControl>
+                            <FormControl className="dropdown">
                             <InputLabel>taxiway</InputLabel>
-                            <Select>
-                                <MenuItem>NKDN</MenuItem>
-                                <MenuItem>JTJT3</MenuItem>
-                                <MenuItem>LS OSIU</MenuItem>
-                                <MenuItem>NDNNEN4</MenuItem>
-                            </Select>
-                            <FormHelperText>between</FormHelperText>
-                        </FormControl>
-                        <FormControl className="dropdown">
-                        <InputLabel>taxiway</InputLabel>
-                            <Select>
-                                <MenuItem>NKDN</MenuItem>
-                                <MenuItem>JTJT3</MenuItem>
-                                <MenuItem>LS OSIU</MenuItem>
-                                <MenuItem>NDNNEN4</MenuItem>
-                            </Select>
-                            <FormHelperText>and</FormHelperText>
-                        </FormControl>
-                        <KeyboardDatePicker
-                            format="MM/dd/yyyy"
-                            margin="normal"
-                            id="date-picker-inline"
-                            label="date"
-                            value={selectedDate}
-                            onChange={handleDateChange}
-                            KeyboardButtonProps={{
-                                'aria-label': 'change date',
-                            }}
-                            keyboardIcon={ (
-                                <TodayTwoToneIcon/>
-                            )}
-                        />
-                        <KeyboardTimePicker
-                            ampm={false}
-                            margin="normal"
-                            id="time-picker"
-                            label="time"
-                            value={selectedDate}
-                            onChange={handleDateChange}
-                            KeyboardButtonProps={{
-                                'aria-label': 'change time',
-                            }}
-                            keyboardIcon={ (
-                                <AccessAlarmTwoToneIcon/>
-                            )}
-                            
-                        />
+                                <Select>
+                                    <MenuItem>NKDN</MenuItem>
+                                    <MenuItem>JTJT3</MenuItem>
+                                    <MenuItem>LS OSIU</MenuItem>
+                                    <MenuItem>NDNNEN4</MenuItem>
+                                </Select>
+                                <FormHelperText>and</FormHelperText>
+                            </FormControl>
+                        </div>
                         
                     </Card>
                         <p>text input of closure purpose</p>
