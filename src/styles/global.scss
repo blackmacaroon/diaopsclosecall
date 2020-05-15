@@ -54,16 +54,14 @@
   .closureRequestForm {
     display: flex;
     flex-direction: column;
-    
+
     .formInputs {
       margin: 20px;
       display: flex;
       justify-content: center;
 
-      .datetimepicker {
-        width: 300px;
-      }
-      .dropdown{
+      .datetimepicker, .dropdown, .checkboxWrap{
+        padding: 0 10px;
         width: 300px;
       }
     }

@@ -63,6 +63,7 @@ export default function Request(){
                         </div>
                         <div className="formInputs">
                             <FormControlLabel
+                                className="checkboxWrap"
                                 control={<Checkbox className="complexClosure" name="complexClosure" />}
                                 label="Check for complex closure"
                             />
@@ -78,24 +79,22 @@ export default function Request(){
                         </div>
                         <div className="formInputs">
                             <FormControl className="dropdown">
-                                <InputLabel>taxiway</InputLabel>
+                                <InputLabel>betweeen</InputLabel>
                                 <Select>
                                     <MenuItem>NKDN</MenuItem>
                                     <MenuItem>JTJT3</MenuItem>
                                     <MenuItem>LS OSIU</MenuItem>
                                     <MenuItem>NDNNEN4</MenuItem>
                                 </Select>
-                                <FormHelperText>between</FormHelperText>
                             </FormControl>
                             <FormControl className="dropdown">
-                            <InputLabel>taxiway</InputLabel>
+                            <InputLabel>and</InputLabel>
                                 <Select>
                                     <MenuItem>NKDN</MenuItem>
                                     <MenuItem>JTJT3</MenuItem>
                                     <MenuItem>LS OSIU</MenuItem>
                                     <MenuItem>NDNNEN4</MenuItem>
                                 </Select>
-                                <FormHelperText>and</FormHelperText>
                             </FormControl>
                         </div>
                         
