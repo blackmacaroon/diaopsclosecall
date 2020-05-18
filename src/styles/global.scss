@@ -1,3 +1,7 @@
+*, *:before, *:after{
+	box-sizing: border-box;	
+}
+
 .App {
     text-align: center;
   }
@@ -14,8 +18,12 @@
   }
 
   .map {
-    height: 630px;
-    max-width: auto;
+    height: 630px;   // 70vh
+    width: 735px;    // auto
+  }
+
+  .denMap {
+    z-index: 1;
   }
 
   .logo {
