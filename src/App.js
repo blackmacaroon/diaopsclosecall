@@ -19,7 +19,7 @@ function App() {
       <MuiThemeProvider theme={theme}>
         <div className="App">
           <header className="App-header">
-              <img className="map" src="denmap.png" alt="map of den pavement areas" usemap="#denMap"/>
+              <img className="map" src="denmap.png" alt="map of den pavement areas" useMap="#denMap"/>
               <Map/>
             <p>depending on the moused-over (on tablet, touched) pavement area, this will tell what the closure is for, it's duration, etc. </p>
           </header>
