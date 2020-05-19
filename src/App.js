@@ -9,7 +9,7 @@ import { MuiThemeProvider } from "@material-ui/core";
 import Schedule from "./components/schedule";
 import Request from "./components/request";
 import Admin from "./components/admin";
-import Map from "./components/map";
+import DenMap from "./components/map";
 import theme from "./utils/theme";
 import './App.scss';
 
@@ -20,7 +20,7 @@ function App() {
         <div className="App">
           <header className="App-header">
               <img className="map" src="denmap.png" alt="map of den pavement areas" useMap="#denMap"/>
-              <Map/>
+              <DenMap/>
             <p>depending on the moused-over (on tablet, touched) pavement area, this will tell what the closure is for, it's duration, etc. </p>
           </header>
           <section>
